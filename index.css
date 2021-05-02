@@ -1,0 +1,37 @@
+h1{
+    color: #00adff
+}
+.header{
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    animation-name: example;
+    animation-duration:4s;
+}
+@keyframes example{
+    from{background-color:aqua;}
+    to{background-color:red;}
+}
+
+.item img{
+    border:1px solid #00adff;
+    border-radius:20%;    
+}   
+.item{
+    position: relative;
+}
+.item p{
+    position:absolute;
+    top:50%;
+    left:50%;
+   transform :translate(-50%,-50%);
+   font-weight:bold;
+   font-size:20px;
+   opacity:0;
+}
+.item:hover p{
+    opacity:1
+}
+.item:hover img{
+    opacity:0.33
+}
